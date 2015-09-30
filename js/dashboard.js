@@ -4,9 +4,18 @@ dashboard.controller('tabCtrl', function($scope) {
     var tabClasses;
     $scope.dashboardHidden = false;
     $scope.dashboardButton = "<";
+    $scope.templates = [{
+        "name": "Stock Market",
+        "url": 'views/stock-app.html'
+    }, {
+        "name": "Chat Application",
+        "url": 'views/chat-app.html'
+    }];
 
     function initTabs() {
         tabClasses = ["", "", "", ""];
+    	$scope.currentTab = $scope.templates[0];
+    	console.log($scope.currentTab)
     }
 
     $scope.toggleDashboard = function() {
@@ -25,14 +34,10 @@ dashboard.controller('tabCtrl', function($scope) {
     $scope.setActiveTab = function(tabNum) {
         initTabs();
         tabClasses[tabNum] = "active";
+        $scope.currentTab = $scope.templates[tabNum];
     };
-
-    $scope.tab1 = "This is first section";
-    $scope.tab2 = "This is SECOND section";
-    $scope.tab3 = "This is THIRD section";
-    $scope.tab4 = "This is FOUTRH section";
 
     //Initialize 
     initTabs();
-    $scope.setActiveTab(1);
+    $scope.setActiveTab(0);
 });

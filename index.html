@@ -13,18 +13,20 @@
         <button ng-click='toggleDashboard()' class='btn' ng-class='{"btn-success" : dashboardHidden == true, "btn-danger" : dashboardHidden == false}' id='toggle-dashboard'>{{dashboardButton}}</button>
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li ng-click='setActiveTab(1)' class="sidebar-brand">
+                <li ng-click='setActiveTab(0)' class="sidebar-brand">
                     <a href="#">
                         Dashboard 
                     </a>
                 </li>
-                <li ng-click='setActiveTab(1)' class="active">
-                    <a href="#">Dashboard</a>
+                <li ng-class='getTabClass(0)' ng-click='setActiveTab(0)'>
+                    <a href="#">Stocks Data</a>
                 </li>
-                <li ng-click='setActiveTab(2)' class="active">
-                    <a href="#">Chat room</a>
+                <li ng-class='getTabClass(1)' ng-click='setActiveTab(1)'>
+                    <a href="#">Chat Room</a>
                 </li>
             </ul>
+        </div>
+        <div ng-include src="currentTab.url" scope="" onload="" class='container'>
         </div>
     </div>
     <script src="js/librarys/bootstrap/dist/js/bootstrap.js"></script>
