@@ -4,15 +4,31 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/dashboard.css" rel="stylesheet" />
     <script src="js/librarys/jquery/dist/jquery.js"></script>
 </head>
 
-<body>
-    <div class="container" id="view" ng-view />
+<body ng-controller="tabCtrl">
+    <div id='wrapper' ng-class='{toggled: dashboardHidden == true}'>
+        <button ng-click='toggleDashboard()' class='btn' ng-class='{"btn-success" : dashboardHidden == true, "btn-danger" : dashboardHidden == false}' id='toggle-dashboard'>{{dashboardButton}}</button>
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li ng-click='setActiveTab(1)' class="sidebar-brand">
+                    <a href="#">
+                        Dashboard 
+                    </a>
+                </li>
+                <li ng-click='setActiveTab(1)' class="active">
+                    <a href="#">Dashboard</a>
+                </li>
+                <li ng-click='setActiveTab(2)' class="active">
+                    <a href="#">Chat room</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="js/librarys/bootstrap/dist/js/bootstrap.js"></script>
     <script src="js/librarys/angular/angular.js"></script>
-    <!-- // <script src="js/librarys/angular-route.js"></script> -->
-    <!-- // <script src="js/librarys/angular-resource.js"></script> -->
     <script src="js/dashboard.js"></script>
 </body>
 
