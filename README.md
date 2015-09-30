@@ -28,8 +28,6 @@ Dashboard/                    --> all of the source files for the application
   assets
   	jsons                          --> contains the json files
   	images                          --> contains the images files
-  directives                     --> contains the directives used in the app
-    dynamic-charts-directives.js --> the directive for chart rendering
   css/               --> contains all the styles required in the tabs
   
   views/                --> contains all the views
