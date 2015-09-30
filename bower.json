@@ -1,0 +1,25 @@
+{
+  "name": "Dashboard",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nevinm/Dashboard",
+  "authors": [
+    "Nevin <nevinm@qburst.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "install": {
+    "path": {
+      "css": "css",
+      "js": "js/librarys"
+    }
+  },
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.7"
+  }
+}
