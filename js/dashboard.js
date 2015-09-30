@@ -15,7 +15,6 @@ dashboard.controller('tabCtrl', function($scope) {
     function initTabs() {
         tabClasses = ["", "", "", ""];
     	$scope.currentTab = $scope.templates[0];
-    	console.log($scope.currentTab)
     }
 
     $scope.toggleDashboard = function() {
@@ -26,10 +25,6 @@ dashboard.controller('tabCtrl', function($scope) {
     $scope.getTabClass = function(tabNum) {
         return tabClasses[tabNum];
     };
-
-    $scope.getTabPaneClass = function(tabNum) {
-        return "tab-pane " + tabClasses[tabNum];
-    }
 
     $scope.setActiveTab = function(tabNum) {
         initTabs();
