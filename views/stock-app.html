@@ -1,5 +1,5 @@
 <script type="text/javascript">
-	var socket = io.connect("http://127.0.0.1:8081/");
+	var socket = io.connect("http://127.0.0.1:8082/api");
 	  
 	  socket.on('msg', function(data){
         $('#msg').text(data.msg);
