@@ -13,7 +13,8 @@ React JS - Front end dynamic UI rendering.
 	to maintain the change of the required data only instead of the whole page render.
 
 ### The Server
-Node JS - Back end API creation.
+Express JS - Back end API creation.
+	It's a framework based on Node JS, which provides easier server creation and manipulation methods.
 
 Description : The application intends to create a dashboard having multiple tabs. On selection of each tabs, the user is provided with a view in respective to the corresponding tab.
 
@@ -25,17 +26,24 @@ Currently aiming to create the following tabs:
 
 ```
 Dashboard/                    --> all of the source files for the application
-  assets
-  	jsons                          --> contains the json files
-  	images                          --> contains the images files
-    
-  css/               --> contains all the styles required in the tabs
-  
-  views/                --> contains all the views
-  js 					--> contains all the controllers and directives
-	app.js                --> main application module
-	controllers 		  --> contains all the controllers
-	directives 		  --> contains all the directives
-  index.html            --> app layout file (the main html template file of the app)
+	node_modules			  --> all of the node modules are present in this file.
+    public					  --> all static files within this folder
+		assets
+			jsons                          --> contains the json files
+			images                         --> contains the images files
+
+		css/              	  --> contains all the styles required in the tabs
+
+		views/                --> contains all the views
+		js 					  --> contains all the controllers and directives
+			controllers 	  --> contains all the controllers
+			directives 		  --> contains all the directives
+			libraries		  --> contains all the libraries
+
+	dashboard.js              --> main application module
+	index.html                --> app layout file (the main html template file of the app)
+	bower.json 				  --> bower package
+	package.json 			  --> npm package
+	.bowercc 				  --> bower path setting
 ```
 For more information on AngularJS please check out http://angularjs.org/
