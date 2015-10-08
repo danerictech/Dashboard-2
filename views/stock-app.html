@@ -1,14 +1,9 @@
 <script type="text/javascript">
-	var socket = io.connect("http://127.0.0.1:8082/api");
-	  
-	  socket.on('msg', function(data){
-        $('#msg').text(data.msg);
-      });
-      
-	  socket.on('msgWrite', function(data){
-        $('#msgWrite').text(data.msgWrite);
-      });
-
+var io = io.connect('http://10.1.4.109:4200/');
+io.emit('ready');
+io.on('msg', function(data) {
+    $('#msg').text(data.msg);
+});
 </script>
 <div id="msg"></div>
 <div id="msgWrite"></div>
