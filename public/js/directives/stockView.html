@@ -1,11 +1,14 @@
-<div class='col-md-4' ng-repeat="data in parsedStockData">
-    <div class='panel panel-primary'>
-        <div class='panel-heading'>
-            <h2>{{data.Product}}</h2></div>
-        <div class="panel-body">
-            <h3>BBP: <b>{{data.BBP}}</b></h3>
-            <h3>BSP: <b>{{data.BSP}}</b></h3>
-            <h3>LTP: <b>{{data.LTP}}</b></h3>
+<div class='jumpotron'>
+    <h1>Live Stock Update</h1>
+    <div class='col-md-4' ng-repeat="data in parsedStockData">
+        <div class='panel panel-primary'>
+            <div class='panel-heading'>
+                <h2>{{data.Product}}</h2></div>
+            <div class="panel-body">
+                <h3>BBP: <b>{{data.BBP}}</b></h3>
+                <h3>BSP: <b>{{data.BSP}}</b></h3>
+                <h3>LTP: <b>{{data.LTP}}</b></h3>
+            </div>
         </div>
     </div>
 </div>
