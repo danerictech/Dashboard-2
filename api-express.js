@@ -39,6 +39,26 @@ var serverjson = [{
     "BBP": "100",
     "BSP": "101",
     "LTP": "100.2"
+}, {
+    "Product": "TOM",
+    "BBP": "10",
+    "BSP": "10.2",
+    "LTP": "10.1"
+}, {
+    "Product": "RAD",
+    "BBP": "20",
+    "BSP": "20.4",
+    "LTP": "20"
+}, {
+    "Product": "NUR",
+    "BBP": "20",
+    "BSP": "30.5",
+    "LTP": "40.1"
+}, {
+    "Product": "RAS",
+    "BBP": "100",
+    "BSP": "101",
+    "LTP": "100.2"
 }];
 
 io.sockets.on('connection', function(socket) {
