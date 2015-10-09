@@ -1,10 +1,4 @@
-<script type="text/javascript">
-var io = io.connect();
-io.emit('ready');
-io.on('msg', function(data) {
-    $('#msg').text(data.msg);
-});
-</script>
-<div id="msg"></div>
-<div id="msgWrite"></div>
-<textarea id="text"></textarea>
+<div>
+    <stock-display></stock-display>
+    <div id="msg"></div>
+</div>

@@ -26,13 +26,16 @@
                 </li>
             </ul>
         </div>
-        <div ng-include src="currentTab.url" scope="" onload="" class='container'>
+        <div class='container'>
+            <div ng-include src="currentTab.url" scope="" onload="" class='row'>
+            </div>
         </div>
     </div>
     <script src="js/libraries/bootstrap/dist/js/bootstrap.js"></script>
     <script src="js/libraries/angular/angular.js"></script>
     <script src="js/libraries/socket.io-client/socket.io.js"></script>
     <script src="dashboard.js"></script>
+    <script src="js/directives/directives.js"></script>
 </body>
 
 </html>
