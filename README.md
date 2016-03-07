@@ -47,3 +47,6 @@ Dashboard/                    --> all of the source files for the application
 	.bowercc 				  --> bower path setting
 ```
 For more information on AngularJS please check out http://angularjs.org/
+
+To run the server : 
+Run : node api-express.js
